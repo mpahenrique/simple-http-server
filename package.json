@@ -1,0 +1,15 @@
+{
+  "name": "frontend-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpahenrique/frontend-server"
+  },
+  "author": "Henrique Matheus Pereira Aveiro",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/mpahenrique/frontend-server/issues"
+  }
+}
