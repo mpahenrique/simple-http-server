@@ -1,7 +1,7 @@
 {
   "name": "frontend-server",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Simple HTTP Server is a simple way to create a localhost to respond static files.",
   "main": "index.js",
   "repository": {
     "type": "git",
