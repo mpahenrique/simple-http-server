@@ -21,6 +21,9 @@ function init(path, port){
             
         });
     }).listen(port);
+
+    console.info("\nServing files from", path, "in http://localhost:" + port);
+
 }
 
 module.exports = init;
