@@ -1,15 +1,20 @@
 {
   "name": "frontend-server",
   "version": "1.0.0",
-  "description": "Simple HTTP Server is a simple way to create a localhost to respond static files.",
+  "description": "Simple HTTP Server is a simple way to create a local host to respond static files.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpahenrique/frontend-server"
+    "url": "https://github.com/mpahenrique/simple-http-server"
   },
-  "author": "Henrique Matheus Pereira Aveiro",
+  "author": [
+      {
+          "name" : "Henrique Matheus Pereira Aveiro",
+          "github" : "https://github.com/mpahenrique"
+      }
+  ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/mpahenrique/frontend-server/issues"
+    "url": "https://github.com/mpahenrique/simple-http-server/issues"
   }
 }

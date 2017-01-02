@@ -19,7 +19,7 @@ Simple HTTP Server requires [Node.js](https://nodejs.org/) to run.
 ###### Using in a node project
 
 ```sh
-$ npm install https://github.com/mpahenrique/simple-http-server --save-dev
+$ npm install frontend-server --save-dev
 ```
 ###### Using in a basic project
 
