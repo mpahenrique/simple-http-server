@@ -16,7 +16,7 @@ Simple HTTP Server uses 2 default modules in nodeJs:
 ### Installation
 
 ```sh
-$ npm install frontend-server --save-dev
+$ npm install -g frontend-server --save-dev
 ```
 
 ### Usage
