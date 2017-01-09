@@ -1,6 +1,6 @@
-# Simple HTTP Server
+# Frontend Server
 
-Simple HTTP Server is a simple way to create a localhost to respond static files.
+Frontend Server is a simple way to create a localhost to respond static files.
 
 Using Simple HTTP Server you can:
   - Configure the path to Simple HTTP Server get the files
@@ -15,39 +15,18 @@ Simple HTTP Server uses 2 default modules in nodeJs:
 
 ### Installation
 
-Simple HTTP Server requires [Node.js](https://nodejs.org/) to run.
-###### Using in a node project
-
 ```sh
-$ npm install frontend-server --save-dev
+$ npm install -g frontend-server --save-dev
 ```
-###### Using in a basic project
-
-```sh
-$ git clone https://github.com/mpahenrique/simple-http-server
-```
-
 
 ### Usage
 
-```js
-simpleHTTPServer(path, port);
+```sh
+fserver path=/path/to/server port=3000
 ```
 
 * Default port = 3000
 * Default path = ./
-
-###### Using directly
-
-```sh
-$ node
-> require('./simple-http-server')('/path/to/your/base/directory', 3000);
-```
-###### Using like a module
-
-```js
-var simpleHTTPServer = require('simple-http-server')(__dirname, 1234);
-```
 
 
    [http]: <https://nodejs.org/api/http.html>
