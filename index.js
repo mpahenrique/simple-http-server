@@ -2,7 +2,8 @@
 'use strict';
 
 const http       = require('http')
-,     fileSystem = require('fs');   
+,     fileSystem = require('fs')
+,     path       = require('path');   
 
 var args   = process.argv.slice(2)
 ,   config = {};
@@ -23,9 +24,16 @@ http.createServer(function(request, response){
 
     fileSystem.readFile(config.path + request.url, function(err, fileData){
         var status = err ? 404 : 200;
+        
+        
         response.writeHead(status);
         if(!err){ // Found file
-            response.end(fileData);
+            var fileExt = path.extname(request.url)
+            if(['svg', 'jpg', 'png', 'gif', 'jpeg'].indexOf(fileExt) >= 0)) { // isImage!                
+                response.writeHead({
+                    'Content-Type': 'image/' + (fileExt === 'svg' ? (fileExt + '+xml') : fileExt)
+                }   
+            }response.end(fileData);
         } else { // Not found file
             response.end('Not found!');
         }
